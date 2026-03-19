@@ -90,3 +90,24 @@ def transform_data(q, data, transform_params):
             data_new[i,curve_idx,1] = yvals
     
     return data_new
+
+def detransform_data(q, data_transformed, transform_params):
+    q = np.copy(q)
+    data_new = np.copy(data_transformed)
+    q_source, widths_per_curve, heights_per_curve = transform_params
+
+    for curve_idx in range(len(data_transformed[0])):
+        for (i, (qval, wvals, yvals)) in enumerate(zip(q, data_transformed[:,curve_idx,0], data_transformed[:,curve_idx,1])):
+            estimated_width = np.interp(qval, q_source, widths_per_curve[curve_idx])
+            estimated_height = np.interp(qval, q_source, heights_per_curve[curve_idx])
+
+            wpeak = modules.utils.peak(qval, 1)
+            wvals = wvals * estimated_width
+            wvals = wvals + wpeak
+            yvals = yvals * estimated_height
+
+            data_new[i,curve_idx,0] = wvals
+            data_new[i,curve_idx,1] = yvals
+
+    return data_new
+

@@ -37,12 +37,14 @@ def load_ab_initio(path):
 
     qvals = range(50,450, 50)
     for q in qvals:
+        qdata = []
         for curve in curvenames:
             filename = f"CR_q{q}_{curve}_NNLO_GO_450.dat"
             raw = np.loadtxt(path + filename)
-        w = raw[:,0]
-        y = raw[:,1]
-        data.append([w, y])
+            w = raw[:,0]
+            y = raw[:,1]
+            qdata.append([w, y])
+        data.append(qdata)
 
     qvals = np.nan_to_num(np.array(qvals))
     data = np.nan_to_num(np.array(data))

@@ -80,3 +80,33 @@ def load_spectral(path):
     data = data[sorted_indices]
 
     return qvals, data
+
+def build_spectral_interpolator(spectral_q, spectral_vals):
+    from scipy.interpolate import CloughTocher2DInterpolator
+
+    def build_spectral_interpolator(q_vals, vals, curve_index):
+        wvals = vals[:, curve_index, 0, :]
+        yvals = vals[:, curve_index, 1, :]
+
+        points = []
+        vals = []
+        for i in range(len(q_vals)):
+            for j in range(wvals.shape[1]):
+                points.append((q_vals[i], wvals[i, j]))
+                vals.append(yvals[i, j])
+
+        interpolator_function = CloughTocher2DInterpolator(
+            points,
+            values=vals,
+            # fill_value=0.0, # Need to trim training data to not fall outside this 
+            # method="cubic",
+            # bounds_error=True,
+            # fill_value=np.nan,
+        )
+        return interpolator_function
+
+    spectral_functions = []
+    for i in range(spectral_vals.shape[1]):
+        f = build_spectral_interpolator(spectral_q, spectral_vals, i)
+        spectral_functions.append(f)
+    return spectral_functions

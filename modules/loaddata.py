@@ -42,11 +42,37 @@ def load_ab_initio(path):
             filename = f"CR_q{q}_{curve}_NNLO_GO_450.dat"
             raw = np.loadtxt(path + filename)
             w = raw[:,0]
-            y = raw[:,1]
+            y = (raw[:,1] + raw[:,2])/2*1000 # Average lower and upper
             qdata.append([w, y])
         data.append(qdata)
 
     qvals = np.nan_to_num(np.array(qvals))
+    data = np.nan_to_num(np.array(data))
+
+    sorted_indices = np.argsort(qvals)
+    qvals = qvals[sorted_indices]
+    data = data[sorted_indices]
+
+    return qvals, data
+
+def load_spectral(path):
+    curvenames = ["Rxy", "R00", "Rxx"]
+
+    data = []
+
+    qvals = np.arange(0.05, 0.45, 0.025)
+    for q in qvals:
+        qdata = []
+        for curve in curvenames:
+            q = round(q, 4)
+            filename = f"{curve}_q_{q}.txt"
+            raw = np.loadtxt(path + filename)
+            w = raw[:,0]*1000
+            y = raw[:,1]
+            qdata.append([w, y])
+        data.append(qdata)
+
+    qvals = np.nan_to_num(np.array(qvals))*1000
     data = np.nan_to_num(np.array(data))
 
     sorted_indices = np.argsort(qvals)

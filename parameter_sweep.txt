@@ -1,0 +1,72 @@
+loss=3.8200187708473123
+dev=1.5343720397357716
+use_residuals=1
+layers=[128, 128]
+learning_rate=0.001
+
+loss=4.863546846986858
+dev=1.517129469231772
+use_residuals=0
+layers=[128, 128]
+learning_rate=0.001
+
+loss=2.6896602111634116
+dev=1.0158002221716624
+use_residuals=1
+layers=[64, 64, 64]
+learning_rate=0.001
+
+loss=3.9906025347255443
+dev=2.1455765139562493
+use_residuals=0
+layers=[64, 64, 64]
+learning_rate=0.001
+
+loss=4.530978064054577
+dev=2.6511262276280902
+use_residuals=1
+layers=[128, 128]
+learning_rate=0.0003
+
+loss=6.628628532802577
+dev=2.54824868677548
+use_residuals=0
+layers=[128, 128]
+learning_rate=0.0003
+
+loss=3.5325140290875487
+dev=1.4411774500427394
+use_residuals=1
+layers=[64, 64, 64]
+learning_rate=0.0003
+
+loss=4.686469886138553
+dev=2.43487279298402
+use_residuals=0
+layers=[64, 64, 64]
+learning_rate=0.0003
+
+loss=5.222194788481903
+dev=2.381354518051424
+use_residuals=1
+layers=[128, 128]
+learning_rate=0.0001
+
+loss=13.542255687425216
+dev=2.50888178787811
+use_residuals=0
+layers=[128, 128]
+learning_rate=0.0001
+
+loss=4.043546600038951
+dev=1.8796508181118763
+use_residuals=1
+layers=[64, 64, 64]
+learning_rate=0.0001
+
+loss=7.5474811251887965
+dev=2.5301732178730356
+use_residuals=0
+layers=[64, 64, 64]
+learning_rate=0.0001
+

@@ -42,8 +42,10 @@ def load_ab_initio(path):
             filename = f"CR_q{q}_{curve}_NNLO_GO_450.dat"
             raw = np.loadtxt(path + filename)
             w = raw[:,0]
-            y = (raw[:,1] + raw[:,2])/2*1000 # Average lower and upper
-            qdata.append([w, y])
+            avg = (raw[:,1] + raw[:,2])/2 * 1000 # Average
+            y1 = (raw[:,1])*1000 # lower 
+            y2 = (raw[:,2])*1000 # upper
+            qdata.append([w, avg, y1, y2])
         data.append(qdata)
 
     qvals = np.nan_to_num(np.array(qvals))

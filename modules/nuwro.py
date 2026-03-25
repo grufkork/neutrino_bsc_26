@@ -21,7 +21,7 @@ def TestCoordinateConversion():
           (n, m) = ConvertCoordinate_1D_to_2D(idx)
           assert(x == n and y == m)
 
-def OutputNuWroResponseFunctions(network: NNInterpolator) -> str:
+def NetworkToNuWroResponseFunctions(network: NNInterpolator) -> str:
     """
     Untested
     Takes a interpolator model and outputs response functions that can be used in NuWro

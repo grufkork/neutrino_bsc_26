@@ -1,71 +1,83 @@
-loss=3.8200187708473123
-dev=1.5343720397357716
+loss=3.8409467825873964
+dev=2.0974131367116424
+combination_idx=0
 use_residuals=1
 layers=[128, 128]
 learning_rate=0.001
 
-loss=4.863546846986858
-dev=1.517129469231772
+loss=4.554444907941551
+dev=1.6932472122561768
+combination_idx=1
 use_residuals=0
 layers=[128, 128]
 learning_rate=0.001
 
-loss=2.6896602111634116
-dev=1.0158002221716624
+loss=3.0423889662160324
+dev=1.608980363427046
+combination_idx=2
 use_residuals=1
 layers=[64, 64, 64]
 learning_rate=0.001
 
-loss=3.9906025347255443
-dev=2.1455765139562493
+loss=3.740413133305105
+dev=2.097489073272127
+combination_idx=3
 use_residuals=0
 layers=[64, 64, 64]
 learning_rate=0.001
 
-loss=4.530978064054577
-dev=2.6511262276280902
+loss=3.491881660056393
+dev=1.8780889275281154
+combination_idx=4
 use_residuals=1
 layers=[128, 128]
 learning_rate=0.0003
 
-loss=6.628628532802577
-dev=2.54824868677548
+loss=4.848388111351857
+dev=2.089793035360834
+combination_idx=5
 use_residuals=0
 layers=[128, 128]
 learning_rate=0.0003
 
-loss=3.5325140290875487
-dev=1.4411774500427394
+loss=3.270055137096298
+dev=1.721835943609103
+combination_idx=6
 use_residuals=1
 layers=[64, 64, 64]
 learning_rate=0.0003
 
-loss=4.686469886138553
-dev=2.43487279298402
+loss=4.034440956109831
+dev=2.2803266186889575
+combination_idx=7
 use_residuals=0
 layers=[64, 64, 64]
 learning_rate=0.0003
 
-loss=5.222194788481903
-dev=2.381354518051424
+loss=3.9504653322948204
+dev=2.2963049046412856
+combination_idx=8
 use_residuals=1
 layers=[128, 128]
 learning_rate=0.0001
 
-loss=13.542255687425216
-dev=2.50888178787811
+loss=5.969730552461211
+dev=2.3388827609573215
+combination_idx=9
 use_residuals=0
 layers=[128, 128]
 learning_rate=0.0001
 
-loss=4.043546600038951
-dev=1.8796508181118763
+loss=3.4499103238876656
+dev=1.652169847007701
+combination_idx=10
 use_residuals=1
 layers=[64, 64, 64]
 learning_rate=0.0001
 
-loss=7.5474811251887965
-dev=2.5301732178730356
+loss=4.297547670714206
+dev=2.4559951860648708
+combination_idx=11
 use_residuals=0
 layers=[64, 64, 64]
 learning_rate=0.0001

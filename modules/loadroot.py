@@ -9,6 +9,10 @@ def load_events_file(path):
     
     q_vals = []
     omega_vals = []
+    
+    mom_ins = []
+    mom_outs = []
+
     for (e_in,e_out) in zip(e_ins, e_outs):
         # for particle_idx in range(len(e["out.t"])):
         p_in = e_in
@@ -23,8 +27,10 @@ def load_events_file(path):
         # q = mom4_square(m_in-m_out)
         q_vals.append(mom_diff_norm)
         omega_vals.append(omega)
+        mom_ins.append(m_in)
+        mom_outs.append(m_out)
 
-    return q_vals, omega_vals
+    return np.array(mom_ins), np.array(mom_outs), np.array(q_vals), np.array(omega_vals)
 
 def mom4_square(mom4):
     return np.sqrt(mom4[0]**2 - mom4[1]**2 - mom4[2]**2 - mom4[3]**2)

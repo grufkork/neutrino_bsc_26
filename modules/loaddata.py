@@ -4,6 +4,8 @@ import numpy as np
 # Data is structured as
 #   [q_value][curve_index(0-4)][w=0|y=1][point_index]
 
+LFG_CURVENAMES = ["R00", "R0z", "Rzz", "Rxx", "Rxy"]
+
 def load_response_functions(path, name):
     files = os.listdir(path)
     qvals = []
@@ -16,12 +18,12 @@ def load_response_functions(path, name):
 
             qdata = []
             
-            w = raw[:,0]
+            w = raw[:,0]*1000 # Convert to MeV
             for i in range(1, raw.shape[1]):
                 qdata.append([w, raw[:,i]])
             data.append(qdata)
 
-    qvals = np.nan_to_num(np.array(qvals))
+    qvals = np.nan_to_num(np.array(qvals)) * 1000 # Convert to MeV
     data = np.nan_to_num(np.array(data))
 
     sorted_indices = np.argsort(qvals)
@@ -30,15 +32,17 @@ def load_response_functions(path, name):
 
     return qvals, data
 
+
+ab_initio_curvenames = ["Rxy", "R00", "Rt", "R0z", "Rzz"]
+
 def load_ab_initio(path):
-    curvenames = ["Rxy", "R00", "Rt"]
 
     data = []
 
     qvals = range(50,450, 50)
     for q in qvals:
         qdata = []
-        for curve in curvenames:
+        for curve in ab_initio_curvenames:
             filename = f"CR_q{q}_{curve}_NNLO_GO_450.dat"
             raw = np.loadtxt(path + filename)
             w = raw[:,0]
@@ -112,3 +116,19 @@ def build_spectral_interpolator(spectral_q, spectral_vals):
         f = build_spectral_interpolator(spectral_q, spectral_vals, i)
         spectral_functions.append(f)
     return spectral_functions
+
+def load_t2k(path):
+    bins = []
+    vals = []
+    with open(path, "r") as f:
+        lines = f.readlines()[3:]
+    for line in lines:
+        line = line.strip()
+        parts = line.split()
+        i = float(parts[0])
+        bin_lower = float(parts[1])
+        bin_upper = float(parts[3])
+        flux = float(parts[4])
+        bins.append((bin_lower, bin_upper))
+        vals.append(flux)
+    return np.array(bins)*1000, np.array(vals)

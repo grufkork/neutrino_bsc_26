@@ -20,7 +20,7 @@ def load_response_functions(path, name):
             
             w = raw[:,0]*1000 # Convert to MeV
             for i in range(1, raw.shape[1]):
-                qdata.append([w, raw[:,i]])
+                qdata.append([w, raw[:,i]/1000]) # Tables are in units of 1/GeV
             data.append(qdata)
 
     qvals = np.nan_to_num(np.array(qvals)) * 1000 # Convert to MeV

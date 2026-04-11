@@ -22,11 +22,12 @@ def load_events_file(path):
             p_out = e_out
             m_in = np.array([p_in["in.t"][0], p_in["in.x"][0], p_in["in.y"][0], p_in["in.z"][0]])
             m_out = np.array([p_out["out.t"][0], p_out["out.x"][0], p_out["out.y"][0], p_out["out.z"][0]])
+            # print(m_out)
 
             m_diff = m_in-m_out
-
             omega = m_diff[0]
-            mom_diff_norm = np.linalg.norm(m_diff[1:4])
+            # mom_diff_norm = np.linalg.norm(m_diff[1:4])
+            mom_diff_norm = np.sqrt(m_diff[1]**2 + m_diff[2]**2 + m_diff[3]**2)
             # q = mom4_square(m_in-m_out)
             q_vals.append(mom_diff_norm)
             omega_vals.append(omega)

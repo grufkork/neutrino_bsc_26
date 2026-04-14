@@ -11,7 +11,12 @@ def load_events_file(path):
     
     mom_ins = []
     mom_outs = []
+    
+    weights = []
+
     for key in keys:
+        # for k in f[key].keys():
+        #     print(key + " " + k)
         if not key.startswith("treeout;"):
             continue
         e_ins = f[key]['e/in'].array()
@@ -33,12 +38,15 @@ def load_events_file(path):
             omega_vals.append(omega)
             mom_ins.append(m_in)
             mom_outs.append(m_out)
+        
+        for weight in f[key]['e/weight'].array():
+            weights.append(weight)
 
 
     
     
 
-    return np.array(mom_ins), np.array(mom_outs), np.array(q_vals), np.array(omega_vals)
+    return np.array(mom_ins), np.array(mom_outs), np.array(q_vals), np.array(omega_vals), np.array(weights)
 
 def mom4_square(mom4):
     return np.sqrt(mom4[0]**2 - mom4[1]**2 - mom4[2]**2 - mom4[3]**2)

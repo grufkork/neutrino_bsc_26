@@ -46,7 +46,15 @@ def load_events_file(path):
     
     
 
-    return np.array(mom_ins), np.array(mom_outs), np.array(q_vals), np.array(omega_vals), np.array(weights)
+    out = {
+        "mom_ins": np.array(mom_ins),
+        "mom_outs": np.array(mom_outs),
+        "q_vals": np.array(q_vals),
+        "omega_vals": np.array(omega_vals),
+        "weights": np.array(weights)
+    }
+    return out
+    
 
 def mom4_square(mom4):
     return np.sqrt(mom4[0]**2 - mom4[1]**2 - mom4[2]**2 - mom4[3]**2)

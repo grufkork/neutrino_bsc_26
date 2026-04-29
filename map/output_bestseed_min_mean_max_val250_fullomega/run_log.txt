@@ -1,0 +1,240 @@
+[2026-04-16 14:41:51] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-16 14:41:51] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-16 14:41:51] ================================================================================
+[2026-04-16 14:41:51] Startar target_mode=min
+[2026-04-16 14:41:51] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-16 14:41:51] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-16 14:41:51] Validation q: 250
+[2026-04-16 14:41:58] Klart target_mode=min | seed=20270445 | best_epoch=1047 | val_MAE=4.773732e-04 | checkpoint=bestseed_target_min.pt
+[2026-04-16 14:41:58] ================================================================================
+[2026-04-16 14:41:58] Startar target_mode=mean
+[2026-04-16 14:41:58] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-16 14:41:58] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-16 14:41:58] Validation q: 250
+[2026-04-16 14:42:05] Klart target_mode=mean | seed=20270445 | best_epoch=1057 | val_MAE=3.632957e-04 | checkpoint=bestseed_target_mean.pt
+[2026-04-16 14:42:05] ================================================================================
+[2026-04-16 14:42:05] Startar target_mode=max
+[2026-04-16 14:42:05] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-16 14:42:05] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-16 14:42:05] Validation q: 250
+[2026-04-16 14:42:12] Klart target_mode=max | seed=20270445 | best_epoch=1131 | val_MAE=3.902383e-04 | checkpoint=bestseed_target_max.pt
+[2026-04-16 14:42:13] Sparade figur: output_bestseed_min_mean_max_val250_fullomega\plots\R00_q250_min_mean_max_prediction_vs_true.png
+[2026-04-16 14:42:13] Sparade figur: output_bestseed_min_mean_max_val250_fullomega\plots\Rt_q250_min_mean_max_prediction_vs_true.png
+[2026-04-16 14:42:14] Sparade figur: output_bestseed_min_mean_max_val250_fullomega\plots\Rxy_q250_min_mean_max_prediction_vs_true.png
+[2026-04-16 14:42:14] Sparade figur: output_bestseed_min_mean_max_val250_fullomega\plots\Rzz_q250_min_mean_max_prediction_vs_true.png
+[2026-04-16 14:42:14] Sparade figur: output_bestseed_min_mean_max_val250_fullomega\plots\R0z_q250_min_mean_max_prediction_vs_true.png
+[2026-04-16 14:42:14] KLART | total_elapsed_sec=22.94
+[2026-04-16 14:42:14] CSV: output_bestseed_min_mean_max_val250_fullomega\run_results.csv
+[2026-04-16 14:42:14] Summary: output_bestseed_min_mean_max_val250_fullomega\summary.json
+[2026-04-16 14:42:14] Plots: output_bestseed_min_mean_max_val250_fullomega\plots
+[2026-04-16 14:42:14] Checkpoints: output_bestseed_min_mean_max_val250_fullomega\checkpoints
+[2026-04-19 12:19:03] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:19:03] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:19:03] ================================================================================
+[2026-04-19 12:19:03] Startar target_mode=min
+[2026-04-19 12:19:03] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:19:03] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:19:03] Validation q: 250
+[2026-04-19 12:20:16] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:20:16] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:20:16] ================================================================================
+[2026-04-19 12:20:16] Startar target_mode=min
+[2026-04-19 12:20:16] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:20:16] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:20:16] Validation q: 250
+[2026-04-19 12:20:48] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:20:48] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:20:48] ================================================================================
+[2026-04-19 12:20:48] Startar target_mode=min
+[2026-04-19 12:20:48] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:20:48] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:20:48] Validation q: 250
+[2026-04-19 12:21:44] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:21:44] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:21:44] ================================================================================
+[2026-04-19 12:21:44] Startar target_mode=min
+[2026-04-19 12:21:44] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:21:44] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:21:44] Validation q: 250
+[2026-04-19 12:22:11] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:22:11] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:22:11] ================================================================================
+[2026-04-19 12:22:11] Startar target_mode=min
+[2026-04-19 12:22:11] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:22:11] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:22:11] Validation q: 250
+[2026-04-19 12:24:08] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:24:08] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:24:08] ================================================================================
+[2026-04-19 12:24:08] Startar target_mode=min
+[2026-04-19 12:24:08] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:24:08] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:24:08] Validation q: 250
+[2026-04-19 12:25:05] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:25:05] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:25:05] ================================================================================
+[2026-04-19 12:25:05] Startar target_mode=min
+[2026-04-19 12:25:06] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:25:06] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:25:06] Validation q: 250
+[2026-04-19 12:25:26] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:25:26] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:25:26] ================================================================================
+[2026-04-19 12:25:26] Startar target_mode=min
+[2026-04-19 12:25:26] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:25:26] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:25:26] Validation q: 250
+[2026-04-19 12:25:49] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:25:49] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:25:49] ================================================================================
+[2026-04-19 12:25:49] Startar target_mode=min
+[2026-04-19 12:25:49] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:25:49] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:25:49] Validation q: 250
+[2026-04-19 12:27:00] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:27:00] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:27:00] ================================================================================
+[2026-04-19 12:27:00] Startar target_mode=min
+[2026-04-19 12:27:01] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:27:01] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:27:01] Validation q: 250
+[2026-04-19 12:32:47] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:32:47] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:32:47] ================================================================================
+[2026-04-19 12:32:47] Startar target_mode=min
+[2026-04-19 12:32:47] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:32:47] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:32:47] Validation q: 250
+[2026-04-19 12:33:34] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:33:34] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:33:34] ================================================================================
+[2026-04-19 12:33:34] Startar target_mode=min
+[2026-04-19 12:33:34] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:33:34] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:33:34] Validation q: 250
+[2026-04-19 12:44:55] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:44:55] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:44:55] ================================================================================
+[2026-04-19 12:44:55] Startar target_mode=min
+[2026-04-19 12:44:56] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:44:56] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:44:56] Validation q: 250
+[2026-04-19 12:45:49] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:45:49] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:45:49] ================================================================================
+[2026-04-19 12:45:49] Startar target_mode=min
+[2026-04-19 12:45:49] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:45:49] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:45:49] Validation q: 250
+[2026-04-19 12:46:07] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:46:07] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:46:07] ================================================================================
+[2026-04-19 12:46:07] Startar target_mode=min
+[2026-04-19 12:46:07] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:46:07] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:46:07] Validation q: 250
+[2026-04-19 12:46:14] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:46:14] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:46:14] ================================================================================
+[2026-04-19 12:46:14] Startar target_mode=min
+[2026-04-19 12:46:14] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:46:14] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:46:14] Validation q: 250
+[2026-04-19 12:46:20] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:46:20] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:46:20] ================================================================================
+[2026-04-19 12:46:20] Startar target_mode=min
+[2026-04-19 12:46:20] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:46:20] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:46:20] Validation q: 250
+[2026-04-19 12:48:06] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:48:06] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:48:06] ================================================================================
+[2026-04-19 12:48:06] Startar target_mode=min
+[2026-04-19 12:48:06] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:48:06] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:48:06] Validation q: 250
+[2026-04-19 12:59:40] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 12:59:40] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 12:59:40] ================================================================================
+[2026-04-19 12:59:40] Startar target_mode=min
+[2026-04-19 12:59:41] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 12:59:41] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 12:59:41] Validation q: 250
+[2026-04-19 13:00:02] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 13:00:02] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 13:00:02] ================================================================================
+[2026-04-19 13:00:02] Startar target_mode=min
+[2026-04-19 13:00:03] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 13:00:03] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 13:00:03] Validation q: 250
+[2026-04-19 13:00:43] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 13:00:43] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 13:00:43] ================================================================================
+[2026-04-19 13:00:43] Startar target_mode=min
+[2026-04-19 13:00:44] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 13:00:44] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 13:00:44] Validation q: 250
+[2026-04-19 13:02:01] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 13:02:01] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 13:02:01] ================================================================================
+[2026-04-19 13:02:01] Startar target_mode=min
+[2026-04-19 13:02:01] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 13:02:01] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 13:02:01] Validation q: 250
+[2026-04-19 13:02:51] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 13:02:51] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 13:02:51] ================================================================================
+[2026-04-19 13:02:51] Startar target_mode=min
+[2026-04-19 13:02:51] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 13:02:51] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 13:02:51] Validation q: 250
+[2026-04-19 13:08:25] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 13:08:25] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 13:08:25] ================================================================================
+[2026-04-19 13:08:25] Startar target_mode=min
+[2026-04-19 13:08:25] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 13:08:25] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 13:08:25] Validation q: 250
+[2026-04-19 13:09:25] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 13:09:25] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 13:09:25] ================================================================================
+[2026-04-19 13:09:25] Startar target_mode=min
+[2026-04-19 13:09:25] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 13:09:25] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 13:09:25] Validation q: 250
+[2026-04-19 14:20:25] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 14:20:25] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 14:20:25] ================================================================================
+[2026-04-19 14:20:25] Startar target_mode=min
+[2026-04-19 14:20:25] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 14:20:25] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 14:20:25] Validation q: 250
+[2026-04-19 14:22:23] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 14:22:23] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 14:22:23] ================================================================================
+[2026-04-19 14:22:23] Startar target_mode=min
+[2026-04-19 14:22:23] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 14:22:23] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 14:22:23] Validation q: 250
+[2026-04-19 14:26:40] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 14:26:40] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 14:26:40] ================================================================================
+[2026-04-19 14:26:40] Startar target_mode=min
+[2026-04-19 14:26:41] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 14:26:41] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 14:26:41] Validation q: 250
+[2026-04-19 14:29:06] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 14:29:06] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 14:29:06] ================================================================================
+[2026-04-19 14:29:06] Startar target_mode=min
+[2026-04-19 14:29:06] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 14:29:06] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 14:29:06] Validation q: 250
+[2026-04-19 14:34:33] Återanvänder bästa seed från tidigare körning: 20270445
+[2026-04-19 14:34:33] Modell: arch=128-128-128-128-128-128 | activation=gelu | feature_set=base+logs | optimizer=adamw
+[2026-04-19 14:34:33] ================================================================================
+[2026-04-19 14:34:33] Startar target_mode=min
+[2026-04-19 14:34:33] Laddade data för q-värden: 50, 75, 100, 150, 200, 250, 300, 350, 400
+[2026-04-19 14:34:33] Train qs: [50, 75, 100, 150, 200, 300, 350, 400]
+[2026-04-19 14:34:33] Validation q: 250

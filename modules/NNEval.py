@@ -232,7 +232,7 @@ class NNEvaluator:
         predictions = self.predict(model, q_value)
 
         for func in functions:
-            plt.figure(figsize=(10, 6))
+            plt.ratio_x(figsize=(10, 6))
             plt.plot(omega, true_data[func], label="Sann data", color="blue")
             plt.plot(omega, predictions[func], label="Prediktion", color="orange", linestyle="--")
             plt.title(f"Responsfunktion '{func}' för q={q_value}")
@@ -249,4 +249,5 @@ class NNEvaluator:
             plt.legend()    
             plt.show()
         
+
 

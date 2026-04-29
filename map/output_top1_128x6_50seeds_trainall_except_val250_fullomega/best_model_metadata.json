@@ -1,0 +1,31 @@
+{
+  "best_seed": 20270445,
+  "best_epoch": 1056,
+  "best_val_mae": 0.00032809062395244837,
+  "best_val_mse": 8.817276011541253e-07,
+  "best_val_weighted_mae": 0.0006246869452297688,
+  "architecture": [
+    128,
+    128,
+    128,
+    128,
+    128,
+    128
+  ],
+  "activation": "gelu",
+  "feature_set": "base+logs",
+  "normalize": true,
+  "unit_system": "MeV",
+  "train_qs": [
+    50,
+    75,
+    100,
+    150,
+    200,
+    300,
+    350,
+    400
+  ],
+  "val_q": 250,
+  "checkpoint_path": "C:\\Users\\ghasemim\\Downloads\\map\\output_top1_128x6_50seeds_trainall_except_val250_fullomega\\best_model_state.pt"
+}

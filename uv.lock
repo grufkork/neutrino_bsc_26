@@ -21,6 +21,15 @@ wheels = [
 ]
 
 [[package]]
+name = "attrs"
+version = "26.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/9a/8e/82a0fe20a541c03148528be8cac2408564a6c9a0cc7e9171802bc1d26985/attrs-26.1.0.tar.gz", hash = "sha256:d03ceb89cb322a8fd706d4fb91940737b6642aa36998fe130a9bc96c985eff32", size = 952055, upload-time = "2026-03-19T14:22:25.026Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/64/b4/17d4b0b2a2dc85a6df63d1157e028ed19f90d4cd97c36717afef2bc2f395/attrs-26.1.0-py3-none-any.whl", hash = "sha256:c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309", size = 67548, upload-time = "2026-03-19T14:22:23.645Z" },
+]
+
+[[package]]
 name = "awkward"
 version = "2.9.0"
 source = { registry = "https://pypi.org/simple" }
@@ -288,6 +297,15 @@ wheels = [
 ]
 
 [[package]]
+name = "hepunits"
+version = "2.4.5"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/de/07/a45fd2b21bbf398746cf18066bbbe304926aa377263ca3cd2bb35df5e334/hepunits-2.4.5.tar.gz", hash = "sha256:88fa57c9f35459d6a6ee2618ba73c2154c489a32e21d525b67da8062a2242e5b", size = 16274, upload-time = "2026-04-14T21:22:17.055Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/44/9b/5fc3458204ecbd9094ce6b3b7850515f7a2f44926093cdfaa6395f88ba10/hepunits-2.4.5-py3-none-any.whl", hash = "sha256:4813336fbc192a6b7bfcc4ec6dbac260669915bca7c945b67bd603b55297f239", size = 17096, upload-time = "2026-04-14T21:22:15.351Z" },
+]
+
+[[package]]
 name = "ipykernel"
 version = "7.2.0"
 source = { registry = "https://pypi.org/simple" }
@@ -541,6 +559,7 @@ dependencies = [
     { name = "ipykernel" },
     { name = "matplotlib" },
     { name = "numpy" },
+    { name = "particle" },
     { name = "scipy" },
     { name = "torch" },
     { name = "torchvision" },
@@ -552,6 +571,7 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=7.2.0" },
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "numpy", specifier = ">=2.4.2" },
+    { name = "particle", specifier = ">=0.26.2" },
     { name = "scipy", specifier = ">=1.17.1" },
     { name = "torch", specifier = ">=2.10.0" },
     { name = "torchvision", specifier = ">=0.25.0" },
@@ -737,6 +757,19 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/81/76/a1e769043c0c0c9fe391b702539d594731a4362334cdf4dc25d0c09761e7/parso-0.8.6.tar.gz", hash = "sha256:2b9a0332696df97d454fa67b81618fd69c35a7b90327cbe6ba5c92d2c68a7bfd", size = 401621, upload-time = "2026-02-09T15:45:24.425Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b6/61/fae042894f4296ec49e3f193aff5d7c18440da9e48102c3315e1bc4519a7/parso-0.8.6-py2.py3-none-any.whl", hash = "sha256:2c549f800b70a5c4952197248825584cb00f033b29c692671d3bf08bf380baff", size = 106894, upload-time = "2026-02-09T15:45:21.391Z" },
+]
+
+[[package]]
+name = "particle"
+version = "0.26.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "attrs" },
+    { name = "hepunits" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d8/17/83e4a4d9ec5a125a497ed14015f6548b5f8f25c8a4465c9e343fbb2587c3/particle-0.26.2.tar.gz", hash = "sha256:23cc4315f90d07d9faf59f813dba6d1200868a01595e37d7c956ebd0809d672d", size = 336359, upload-time = "2026-04-16T19:29:45.444Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b3/91/7e3a06fac8ad91252c316442d8f40c69c8825a9c8726d54d8aca04037580/particle-0.26.2-py3-none-any.whl", hash = "sha256:dc99fbcb2b02c520dd1f3a369446c706466b033f29771255977a96071af41128", size = 315115, upload-time = "2026-04-16T19:29:43.676Z" },
 ]
 
 [[package]]

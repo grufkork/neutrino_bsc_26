@@ -47,7 +47,7 @@ def load_events_file(path):
             if n % 100 == 0:
                 for i in range(count):
                     particles += str(Particle.from_pdgid(p_out["out.pdg"][i]).name) + " "
-                print(str(n) + " " + particles)
+                # print(str(n) + " " + particles)
             n += 1
 
             if flag["flag.qel"] == True:

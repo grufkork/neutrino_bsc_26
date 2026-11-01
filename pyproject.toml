@@ -5,12 +5,25 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "awkward>=2.13.0",
     "ipykernel>=7.2.0",
     "matplotlib>=3.10.8",
     "numpy>=2.4.2",
+    "pandas>=3.1.0",
     "particle>=1.0.1",
     "scipy>=1.17.1",
-    "torch>=2.10.0",
+    "torch",
     "torchvision>=0.25.0",
     "uproot>=5.7.2",
 ]
+
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cu132" }
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu132"
+url = "https://download.pytorch.org/whl/cu132"
+explicit = true

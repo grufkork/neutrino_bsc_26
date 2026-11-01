@@ -39,7 +39,15 @@ def load_ab_initio(path):
 
     data = []
 
-    qvals = range(50,450, 50)
+    qvals = []
+    files = os.listdir(path)
+    for file in files:
+        if "CR_q" in file and "NNLO_GO_450.dat" in file:
+            q = int(file.split("_")[1][1:])
+            if q not in qvals:
+                qvals.append(q)
+
+    # qvals = range(50,450, 50)
     for q in qvals:
         qdata = []
         for curve in ab_initio_curvenames:
